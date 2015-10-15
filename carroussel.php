@@ -57,7 +57,7 @@
           <a href="Products.php"><img class="carousel-image" alt="Image Caption" src="images/R2.png"></a>
           <div class="carousel-caption">
             <p>
-              Leffee
+              Leffe
             </p>
           </div>
         </div>
