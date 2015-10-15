@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link href="Style.css" rel="stylesheet" type="text/css" />
 <link href="header.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/login.css">
 
 <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 
@@ -15,6 +16,9 @@
 
 <?php
     require 'header.php'; ?>
+    <?php
+    require 'login.php';
+    ?>
 
 <?php
     require 'carroussel.php'; ?>
