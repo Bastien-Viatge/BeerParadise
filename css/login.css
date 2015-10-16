@@ -1,10 +1,20 @@
 #login_part,#logged_part{
-	float:right;
+	position:absolute;
+	right:10px;
+	top:10px;
 	padding-top: 10px;
 	padding-right:10px;
+	z-index:3;
 }
 
-#login_name,#login_pass{
+#login_name_div,#login_pass_div,#login_button,#newsletter_link{
 	float:right;
+	margin:0px;
+}
+#login_button{
+	float:right;	
 }
 
+input{
+width: 100px;
+}

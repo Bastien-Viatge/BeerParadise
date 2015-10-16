@@ -1,5 +1,5 @@
 <?php
-	if(isset()){
+	if(isset($_SESSION['user_name'])){
 ?>
 
 <div id="logged_part">
@@ -13,15 +13,10 @@
 ?>
 
 <div id="login_part" >
-
-	<div id="login_name"> 
-		<p>User name :  <input style="float:right;"></p>
-	</div>
-	<div id="login_pass">
-		<p>Password :  <input type="password" style="float:right;"></p>
-	</div>
-	<button>Log in</button><br/>
-	<p>You don't have an account ? <a href="">Sign in !</a></p>
+	<p id="login_name_div">User name :  <input id="login_name"></p><br>
+	<p id="login_pass_div">Password :  <input type="password" id="login_pass"></p><br/><br/>
+	<button id="login_button">Log in</button><br/><br/>
+	<p id="newsletter_link" style="font-size:10pt;">You don't have an account ? <a href="">Sign in !</a></p><br/>
 </div>
 
 <?php
