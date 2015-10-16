@@ -5,7 +5,7 @@ session_start();
 <!DOCTYPE html>   
 <!-- http://www.grafikart.fr/tutoriels/php/panier-php-session-309 -->
 <head>
-<title> Robot Whit Me products </title>
+<title> Beer paradise </title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 <link href="Style.css" rel="stylesheet" type="text/css" />  
 <link href="header.css" rel="stylesheet" type="text/css" /> 
@@ -28,15 +28,14 @@ session_start();
 	{
 		$k = $k + 1;
 		echo '<div id="prod">';
-
-		echo '<div class="ima">','<img src="data:image/jpg;base64,',$enregistrement->imgbase64,'" />','</div>';
+		echo '<div class="ima">','<img src="data:image/png;base64,',$enregistrement->imagebase64,'" />','</div>';
 		echo '<div class="tit">',$enregistrement->title ,'</div>';
         echo '<div class="pri">','Prix : ',$enregistrement->price,' euros','</div>';
     
     
 		echo '<div class="des">','Description: <br/>',$enregistrement->description,'</div>';
         echo '<br/>';
-		echo '<div class="num">','Nombre : ',$enregistrement->number,'</div>';
+		echo '<div class="num">','Nombre : ',$enregistrement->quantity,'</div>';
 
 
 
