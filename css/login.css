@@ -1,4 +1,10 @@
 #login_part{
 	float:right;
+	padding-top: 10px;
 	padding-right:10px;
 }
+
+#login_name,#login_pass{
+	float:right;
+}
+
