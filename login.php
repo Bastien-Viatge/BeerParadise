@@ -1,3 +1,17 @@
+<?php
+	if(isset()){
+?>
+
+<div id="logged_part">
+	<p> Welcome <?php echo $_SESSION['user_name']; ?> !</p>
+	<button>Log out</button>
+</div>
+
+<?php
+
+	}else{
+?>
+
 <div id="login_part" >
 
 	<div id="login_name"> 
@@ -9,3 +23,9 @@
 	<button>Log in</button><br/>
 	<p>You don't have an account ? <a href="">Sign in !</a></p>
 </div>
+
+<?php
+	}
+
+?>
+
