@@ -3,14 +3,12 @@
 <head>
     <title> Beer paradise </title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href="Style.css" rel="stylesheet" type="text/css" />    <!-- lors du placement des fichiers dans les dossiers, nous avons du indiquer le chemin du fichier CSS -->
-    <link href="header.css" rel="stylesheet" type="text/css" />
+    <link href="css/Style.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
 
-// <script language="javascript" src="js/verif.js" type="text/javascript"></script>
+<!-- <script language="javascript" src="js/verif.js" type="text/javascript"></script> -->
 
-
-/*
- */
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>

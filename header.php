@@ -1,5 +1,5 @@
-<header>
-	<div class="robot"> <img class="robot" alt="Image Caption" src="images/robots.jpg"></div>
+<header id="header">
+	
 	<h1 id="header_title"> Welcome to Beer Paradise </h1>
 <?php
     require 'login.php';

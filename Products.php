@@ -7,8 +7,9 @@ session_start();
 <head>
 <title> Beer paradise </title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<link href="Style.css" rel="stylesheet" type="text/css" />  
-<link href="header.css" rel="stylesheet" type="text/css" /> 
+<link href="css/Style.css" rel="stylesheet" type="text/css" />  
+<link href="css/header.css" rel="stylesheet" type="text/css" /> 
+<link href="css/login.css" rel="stylesheet" type="text/css" /> 
 
 </head>
 
