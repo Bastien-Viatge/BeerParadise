@@ -3,27 +3,45 @@
 <head>
     <title> Beer paradise </title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href="css/Style.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/Style.css" rel="stylesheet" type="text/css" />    <!-- lors du placement des fichiers dans les dossiers, nous avons du indiquer le chemin du fichier CSS -->
     <link href="css/header.css" rel="stylesheet" type="text/css" />
-    <link href="css/login.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css">
 
-<!-- <script language="javascript" src="js/verif.js" type="text/javascript"></script> -->
+ <script language="javascript" src="js/verif.js" type="text/javascript"></script>
 
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css">
+
 <script>
+
     $(function() {
       $( "#datepicker" ).datepicker({
                 changeMonth: true,
                 yearRange: '-85:+0M',
                 changeYear: true
     });
+      
+      
+  
    });
+/*
+$(function() {
+  $( "#datepicker" ).datepicker();
+  $( "#format" ).change(function() {
+                        $( "#datepicker" ).datepicker( "option", "dateFormat", $( this ).val() );
+                        });
+  });
+
+*/
+
+
+
 
 </script>
+
 
  </head>
 
@@ -33,19 +51,16 @@
 
 <?php
 require 'header.php';  //Inclusion du header
-//require 'js/verif.js';   // Inclusion du fichier.js contenant la fonction de vérification des champs ?>
-
+require 'js/verif.js';   // Inclusion du fichier.js contenant la fonction de vérification des champs
+?>
 
 
 <?php
 // on se connecte à notre base
 require 'connexion-DB.php';
-    
 ?>
 
-
-
-<form id="monFormulaire" nom="monFormulaire" method="POST" action="ins.php">
+<FORM  id="myForm" nom="myForm" method="POST" action="ins.php">
 <!-- création du formulaire par la méthode POST -->
     
 <h2> Registration </h2>
@@ -55,29 +70,27 @@ require 'connexion-DB.php';
 <p> The (*) fields are needed  </p>
 
 <p>
-    Name * : <input type="text" name="Name" pattern="[a-zA-Z]{2,8}"/> <br/>
-    Surname * : <input type="text" name="Surname" pattern="[a-zA-Z]{2,8}"/> <br/>
-    Password * : <input type="password" name="Password" pattern="[a-zA-Z]{2,8}"/> <br/>
-    Validation * : <input type="password" name="Validation" pattern="[a-zA-Z]{2,8}"/> <br/>
+    Name * : <input type="text" name="Name"/> <br/>
+    Surname * : <input type="text" name="Surname"/> <br/>
+    Password * : <input type="password" name="Password"/> <br/>
+    Validation * : <input type="password" name="Validation"/> <br/>
 
-    Birth Date * : <input type="text" id="datepicker"/> <br/>
+    Birth Date * : <input type="text" id="datepicker" name="datepicker"/> <br/>
 
-    Country * : <input type="text" name="Country" pattern="[a-zA-Z]{2,8}"/> <br/>
-    City * : <input type="text" name="City" pattern="[a-zA-Z]{2,8}"/> <br/>
-    Postal * : <input type="text" name="Postal" pattern="[0-9]{2,8}"/> <br/>
-    Address * : <input type="text" name="Address" pattern="[a-zA-Z]{2,8}"/> <br/>
+    Country * : <input type="text" name="Country"/> <br/>
+    City * : <input type="text" name="City"/> <br/>
+    Postal * : <input type="text" name="Postal"/> <br/>
+    Address * : <input type="text" name="Address"/> <br/>
 
-    Adresse email * : <input type="text" name="Mail" pattern="[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+.[a-zA-Z]+"/> <br/>
-
-<INPUT type="checkbox" name="NewsLetter" value="NewsLetter"> : Subscribe to our Newletter
+    Adresse email * : <input type="text" name="Mail"/> <br/>
 
 </p>
-	<input type="submit" value="Submit"/> /* name="envoyer" onClick="javascript: return verif();"*/  <br/>
+	<input type="submit" value="Submit" name="submit" onClick="javascript: return verif();"/>   <br/>
 
 
 <!-- Utilisamos una funcion Javascript para verificar que el usario completo todas las informaciones necesitadas del formulario -->
 
-<form/>
+</FORM>
 
 
 <?php
