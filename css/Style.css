@@ -1,0 +1,168 @@
+body 
+{
+	border:3px solid black;
+	-moz-border-radius:5px 5px;
+	-webkit-border-radius:5px 5px;
+	padding:5px;
+ 	border-radius: 5px 5px;
+	border: 5px 5px;
+	font-family: verdana;
+
+}
+
+
+h1, h2 {
+  padding: 0 10%;
+  margin: 0;
+  color: #000;
+  font-weight: normal;
+}
+p
+{
+  margin: 0.75em 0;
+  line-height: 2;
+
+}
+
+h1
+{
+  padding-top: 0;
+  padding-bottom: 5px;
+  border-bottom: none;
+  font-family: verdana;
+  font-size: 3.2em;
+  text-transform: uppercase;
+
+}
+
+
+h2
+{
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  border-top: none;
+  font-size: 1.6em;
+  font-style: italic;
+  font-family: verdana;
+}
+
+h3
+{
+	float left;
+	position relative;
+	font-family: verdana;
+}
+
+h4
+{
+	float left;
+	position relative;
+	font-family: verdana;
+}
+
+
+article
+{
+    font-family: verdana;
+    font-size: 20px;
+    border:3px solid black;
+	-moz-border-radius:5px 5px;
+	-webkit-border-radius:5px 5px;
+    background-color: #DEB887;
+}
+
+ul{list-style-type:circle}
+
+li
+{
+	font-style: bold;
+}
+
+
+#prod
+{
+	color:navY ;
+    text-align: justify;
+	border:5px solid black;
+		-moz-border-radius:20px 20px;
+		-webkit-border-radius:20px 20px;
+		 padding:3px;
+	font-family: verdana;
+}
+
+
+.tit
+{
+	float: top;
+
+	font-weight: bold;
+	font-size: large;
+	font-family: verdana;
+}
+.des
+{
+    font-size: small;
+	margin-left:230px;
+	font-family: verdana;
+
+}
+.num
+{	
+    font-size: small;
+	margin-left:230px;
+	font-style: italic;
+	font-family: verdana;
+}
+.pri
+{
+	margin-right: 5%;
+
+	font-style: italic;
+	font-family: verdana;
+}
+
+.ima img{
+
+	float:left;
+	 width:200px; 
+	 height:200px;
+     margin-right: 5%;
+}
+
+
+.achat
+{
+	text-align: center;
+	margin-right: 20%;
+	margin-top: 20%;
+	margin-left: 20%;
+	margin-bottom: 20%;
+	border:3px solid red;
+	-moz-border-radius:5px 5px;
+	-webkit-border-radius:5px 5px;
+}
+
+.bouton
+{
+ font-family: Arial,sans-serif; 
+ font-size: 1.6em; 
+ width: 200px;
+ height: 43px; 
+ padding-top: 7px; /*permet le centrage vertical*/
+ text-align: center; 
+ color: #000;
+ background: #444;
+}
+
+a.nounderline:link 
+{ 
+ text-decoration:none; 
+}
+
+
+
+
+
+
+

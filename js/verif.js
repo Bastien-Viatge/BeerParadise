@@ -15,30 +15,37 @@
 // Vérification des champs obligatoires du formulaire
 function verif()
 {
-	//var nom = monFormulaire.Nom.value;
-	if (monFormulaire.Nom.value == "")
+	
+	if (myForm.Name.value == "")
 	{
-		alert ('Veuillez entrer votre Nom');
-		monFormulaire.Nom.focus();
+		alert ('Please enter your name');
+		myForm.Name.focus();
 		return false;
 	}
-	if(monFormulaire.Prenom.value == "")
+	if(myForm.Surname.value == "")
 	{
-		alert ('Veuillez entrer votre prénom');
-		monFormulaire.Prenom.focus();
+		alert ('Please enter your Surname');
+		myForm.Surname.focus();
 		return false;
 	}
 
-	if(monFormulaire.Age.value == "")
+	if(myForm.Password.value == "")
 	{
-		alert ('Veuillez entrer votre Age');
-		monFormulaire.Age.focus();
+		alert ('Please choose a password');
+		myForm.Password.focus();
 		return false;
 	}
-	if(monFormulaire.Mail.value == "")
+    if(myForm.Validation.value != myForm.Password.value)
+    {
+        alert ('The validation is not correct, try again');
+        myForm.Validation.focus();
+        return false;
+    }
+    
+	if(myForm.Mail.value == "")
 	{
-		alert ('Veuillez rentrer votre Adresse Mail');
-		monFormulaire.Mail.focus();
+		alert ('Please enter your Mail');
+		myForm.Mail.focus();
 		return false;
 	}
 

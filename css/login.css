@@ -7,7 +7,7 @@
 	z-index:3;
 }
 
-#login_name_div,#login_pass_div,#login_button,#newsletter_link{
+#login_name_div,#login_pass_div,#login_button,#signIn_link{
 	float:right;
 	margin:0px;
 }
