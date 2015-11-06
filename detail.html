@@ -18,7 +18,7 @@
         
         <h1 id="header_title"> Welcome to Beer Paradise </h1>
         <div id="login_part" >
-            <form action="services/login_service.php" method="post">
+            <form action="#" method="post">
                 <p id="login_name_div">User name : <input type="text" name="login"></p>
                     <p id="login_pass_div">Password : <input type="password" name="pwd"></p>
                         <input id="login_button" type="submit" value="Log in"/><br/>
@@ -29,11 +29,11 @@
         
         <ul class="sel">
             <li><a href="index.html"> Home </a></li>
-            <li><a href="#about_us"> About Us </a></li>
+            <li><a href="index.html#about_us"> About Us </a></li>
             <li><a href="Products.html"> Our Beers </a> </li>
-            <li><a href="#where_to"> Where to find us ? </a></li>
-            <li><a href="#contact_us"> Contact Us </a></li>
-            <li><a href="index.html"> Client Space </a></li>
+            <li><a href="index.html#where_to"> Where to find us ? </a></li>
+            <li><a href="index.html#contact_us"> Contact Us </a></li>
+            <li><a href="client-space.html"> Client Space </a></li>
         </ul>
         
     </header>
@@ -55,7 +55,7 @@
             
         </div>
         
-        
+        <hr size="1" color="black"/>
         
         <div class="go-shopping">
             <div class="tit-shopping"> Go shopping ! </div>
@@ -63,11 +63,46 @@
             <br/>
             <br/>
             <div class=""> In your cart : 1 ✕ pack(✕6) </div>
+            <br/>
+            <br/>
             
-            <form action="????" method="post">
-                <div class=""> Selected beer : The Leffe </div>
-                <p id="product"
+            <div class="form-product">
+            <form action="????" method="post" id="form-product-type">
+                
+                
+                    <table id="table-product">
+                    
+                    <tr><td id="select-beer"> Selected beer : The Leffe </td>
+                    <td> <label for="product"> Product : </label> </td>
+                    <td> <SELECT name="product-type" size="1">
+                        <OPTION>1L Bottle
+                        <OPTION>33cl Bottle
+                        <OPTION>50cl Can
+                        <OPTION>Pack(✕6)
+                            </SELECT>
+                    </td>
+                    <td> <label for="product"> Quantity : </label> </td>
+                    <td> <SELECT name="quantity-product" size="1">
+                        <OPTION>1
+                        <OPTION>2
+                        <OPTION>3
+                        <OPTION>4
+                        <OPTION>5
+                        <OPTION>6
+                        <OPTION>7
+                        <OPTION>8
+                            </SELECT>
+                    </td>
+                    <td> Price : 6.90 ✕ 1 = 6.90€ </td>
+                    </tr>
+                    
+                    </table>
+                    
             </form>
+            </div>
+            
+            
+         
             
         </div>
         
