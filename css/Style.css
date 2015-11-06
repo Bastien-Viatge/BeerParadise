@@ -85,13 +85,28 @@ li
 
 .prod
 {
+	position: relative;
+	height: 250px;
 	color:navY ;
     text-align: justify;
 	border:5px solid black;
-		-moz-border-radius:20px 20px;
-		-webkit-border-radius:20px 20px;
-		 padding:3px;
+    -moz-border-radius:20px 20px;
+    -webkit-border-radius:20px 20px;
+    padding:3px;
 	font-family: verdana;
+}
+
+.detail
+{
+    position: relative;
+    height: 300px;
+    color:navY ;
+    text-align: justify;
+    
+    -moz-border-radius:20px 20px;
+    -webkit-border-radius:20px 20px;
+    padding:3px;
+    font-family: verdana;
 }
 
 
@@ -130,7 +145,8 @@ li
 	float:left;
 	 width:200px; 
 	 height:200px;
-     margin-right: 5%;
+	 margin-left: 1%;
+     margin-right: 4%;
 }
 
 
@@ -160,13 +176,24 @@ li
 
 a.nounderline:link 
 { 
- text-decoration:none; 
+ text-decoration:none;
+ position: absolute;
+ bottom: 5px;
+ left: 5%;
 }
 
 .back-2-our-beers
 {
     position : absolute;
     margin-left : 800px;
+    
+}
+
+.tit-shopping
+{
+    font-size : 30px;
+    margin-left : 150px;
+    margin-top : 0px;
     
 }
 
