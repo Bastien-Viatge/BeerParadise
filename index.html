@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title> Beer Paradise </title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link href="css/Style.css" rel="stylesheet" type="text/css" />
+<link href="css/header.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/login.css">
+<link rel="stylesheet" href="css/feature-carousel.css" charset="utf-8" />
+    <script src="js/jquery-1.7.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.featureCarousel.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var carousel = $("#carousel").featureCarousel({
+          // include options like this:
+          // (use quotes only for string values, and no trailing comma after last option)
+          // option: value,
+          // option: value
+        });
+
+        $("#but_prev").click(function () {
+          carousel.prev();
+        });
+        $("#but_pause").click(function () {
+          carousel.pause();
+        });
+        $("#but_start").click(function () {
+          carousel.start();
+        });
+        $("#but_next").click(function () {
+          carousel.next();
+        });
+      });
+    </script>
+
+</head>
+<body>
+
+<header id="header">
+	
+	<h1 id="header_title"> Welcome to Beer Paradise </h1>
+	<div id="login_part" >
+		<form action="services/login_service.php" method="post">
+			<p id="login_name_div">User name : <input type="text" name="login"></p>
+			<p id="login_pass_div">Password : <input type="password" name="pwd"></p>
+			<input id="login_button" type="submit" value="Log in"/><br/>
+			<p id="signIn_link" style="font-size:10pt;">You don't have an account ? <a href="./Inscription.php">Sign in !</a></p>
+		</form>
+
+	</div>
+	
+	<ul class="sel">
+		<li><a href="index.html"> Home </a></li>
+		<li><a href="#about_us"> About Us </a></li>
+		<li><a href="Products.php"> Our Beers </a> </li>
+		<li><a href="#where_to"> Where to find us ? </a></li>
+        <li><a href="#contact_us"> Contact Us </a></li>
+        <li><a href="index.html"> Client Space </a></li>
+	</ul>
+	
+</header>
+
+<div class="contenu">
+
+<carroussel>
+
+<a id="but_prev" href="#">PREV</a> | <a id="but_pause" href="#">PAUSE</a> | <a id="but_start" href="#">START</a> | <a id="but_next" href="#">NEXT</a> 
+
+    <div class="carousel-container">
+    
+      <div id="carousel">
+        <div class="carousel-feature">
+          <a href="Products.php"><img class="carousel-image" alt="Image Caption" src="images/R1.png"></a>
+          <div class="carousel-caption">
+            <p>
+              Bière du démon
+            </p>
+          </div>
+        </div>
+        <div class="carousel-feature">
+          <a href="Products.php"><img class="carousel-image" alt="Image Caption" src="images/R2.png"></a>
+          <div class="carousel-caption">
+            <p>
+              Leffe
+            </p>
+          </div>
+        </div>
+        <div class="carousel-feature">
+          <a href="Products.php"><img class="carousel-image" alt="Image Caption" src="images/R3.png"></a>
+          <div class="carousel-caption">
+            <p>
+             E-ARM
+            </p>
+          </div>
+        </div>
+        <div class="carousel-feature">
+          <a href="Products.php"><img class="carousel-image" alt="Image Caption" src="images/R4.png"></a>
+        
+          <div class="carousel-caption">
+            <p>
+             E-Pet
+            </p>
+	</div>
+	</div>
+        <div class="carousel-feature">
+          <a href="http://en.wikipedia.org/wiki/Admiral_Ackbar"><img class="carousel-image" alt="Image Caption" src="images/trap.jpg"></a>
+          <div class="carousel-caption">
+            <p>
+              It's a trap !
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div id="carousel-left"><img src="images/arrow-left.png" /></div>
+      <div id="carousel-right"><img src="images/arrow-right.png" /></div>
+    </div>
+
+</carroussel>
+
+
+
+<h2 id="contact_us">Contact Us</h2>
+<article>
+<p>
+Erat autem diritatis eius hoc quoque indicium nec obscurum nec latens, quod ludicris cruentis delectabatur et in circo sex vel septem aliquotiens vetitis certaminibus pugilum vicissim se concidentium perfusorumque sanguine specie ut lucratus ingentia laetabatur.
+</p>
+</article>
+
+<h2 id ="about_us">About Us</h2>
+<article>
+<p>
+Erat autem diritatis eius hoc quoque indicium nec obscurum nec latens, quod ludicris cruentis delectabatur et in circo sex vel septem aliquotiens vetitis certaminibus pugilum vicissim se concidentium perfusorumque sanguine specie ut lucratus ingentia laetabatur.
+</p>
+</article>
+
+<h2 id="where_to">Where to find us ?</h2>
+<article>
+<p>
+Erat autem diritatis eius hoc quoque indicium nec obscurum nec latens, quod ludicris cruentis delectabatur et in circo sex vel septem aliquotiens vetitis certaminibus pugilum vicissim se concidentium perfusorumque sanguine specie ut lucratus ingentia laetabatur.
+</p>
+</article>
+
+
+</div>
+<footer>
+	<center><hr width="90%"/></center>
+
+	Copyright © 2015 BeerParadise Corp. All rights reserved.
+</footer>
+
+</body>
+</html>

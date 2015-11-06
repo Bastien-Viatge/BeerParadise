@@ -3,7 +3,7 @@ body
 	border:3px solid black;
 	-moz-border-radius:5px 5px;
 	-webkit-border-radius:5px 5px;
-	padding:5px;
+	
  	border-radius: 5px 5px;
 	border: 5px 5px;
 	font-family: verdana;
@@ -79,6 +79,9 @@ li
 	font-style: bold;
 }
 
+.contenu{
+	padding:5px;
+}
 
 #prod
 {
