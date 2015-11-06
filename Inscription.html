@@ -1,0 +1,112 @@
+<!DOCTYPE html>   
+
+<head>
+    <title> Beer paradise </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="css/Style.css" rel="stylesheet" type="text/css" />    <!-- lors du placement des fichiers dans les dossiers, nous avons du indiquer le chemin du fichier CSS -->
+    <link href="css/header.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+
+ <script language="javascript" src="js/verif.js" type="text/javascript"></script>
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css">
+
+<script>
+
+    $(function() {
+      $( "#datepicker" ).datepicker({
+                changeMonth: true,
+                yearRange: '-85:+0M',
+                changeYear: true
+    });
+      
+      
+  
+   });
+
+
+
+
+
+</script>
+
+
+ </head>
+
+  <body>
+      <header id="header">
+          
+          <h1 id="header_title"> Welcome to Beer Paradise </h1>
+          <div id="login_part" >
+              <form action="services/login_service.php" method="post">
+                  <p id="login_name_div">User name : <input type="text" name="login"></p>
+                      <p id="login_pass_div">Password : <input type="password" name="pwd"></p>
+                          <input id="login_button" type="submit" value="Log in"/><br/>
+                          <p id="signIn_link" style="font-size:10pt;">You don't have an account ? <a href="./Inscription.html">Sign in !</a></p>
+                          </form>
+              
+          </div>
+          
+          <ul class="sel">
+              <li><a href="index.html"> Home </a></li>
+              <li><a href="#about_us"> About Us </a></li>
+              <li><a href="Products.php"> Our Beers </a> </li>
+              <li><a href="#where_to"> Where to find us ? </a></li>
+              <li><a href="#contact_us"> Contact Us </a></li>
+              <li><a href="index.html"> Client Space </a></li>
+          </ul>
+          
+      </header>
+
+
+
+<FORM  id="myForm" nom="myForm" method="POST" action="ins.html">
+<!-- création du formulaire par la méthode POST -->
+    
+    <h2> Please enter your datas : </h2>
+<br/>
+
+<!-- On choisie le pattern souhaité pour chaque champs à remplir -->
+<p> The (*) fields are needed  </p>
+
+<p>
+    <label for="name"> Name *: </label> <input type="text" name="Name"/> <br/>
+    <label for="surname"> Surname *: </label> <input type="text" name="Surname"/> <br/>
+    <label for="password"> Password *: </label> <input type="password" name="Password"/> <br/>
+    <label for="validation"> Validation *: </label> <input type="password" name="Validation"/> <br/>
+
+    <label for="birth-date"> Birth date *: </label> <input type="text" id="datepicker" name="datepicker"/> <br/>
+
+    <label for="country"> Country *: </label> <input type="text" name="Country"/> <br/>
+    <label for="city"> City *: </label> <input type="text" name="City"/> <br/>
+    <label for="postal"> Postal *: </label> <input type="text" name="Postal"/> <br/>
+    <label for="adress"> Adress *: </label> <input type="text" name="Address"/> <br/>
+
+    <label for="mail"> Adress mail *: </label> <input type="text" name="Mail"/> <br/>
+
+</p>
+	<input type="submit" value="Submit" name="submit" onClick="javascript: return verif();"/>   <br/>
+
+
+<!-- Utilisamos una funcion Javascript para verificar que el usario completo todas las informaciones necesitadas del formulario -->
+
+</FORM>
+
+
+
+<footer>
+<center><hr width="90%"/>
+
+Copyright © 2015 BeerParadise Corp. All rights reserved.</center>
+</footer>
+
+
+
+</body>
+
+
+

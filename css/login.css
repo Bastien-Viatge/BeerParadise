@@ -18,3 +18,17 @@
 input{
 width: 100px;
 }
+
+label
+{
+    display: block;
+    width: 120px;
+    float: left;
+}
+
+h3
+{
+    font-size: 32px;
+    font-style: bold;
+}
+
