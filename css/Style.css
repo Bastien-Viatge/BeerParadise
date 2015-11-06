@@ -85,6 +85,8 @@ li
 
 .prod
 {
+	position: relative;
+	height: 250px;
 	color:navY ;
     text-align: justify;
 	border:5px solid black;
@@ -130,7 +132,8 @@ li
 	float:left;
 	 width:200px; 
 	 height:200px;
-     margin-right: 5%;
+	 margin-left: 1%;
+     margin-right: 4%;
 }
 
 
@@ -160,7 +163,10 @@ li
 
 a.nounderline:link 
 { 
- text-decoration:none; 
+ text-decoration:none;
+ position: absolute;
+ bottom: 5px;
+ left: 5%;
 }
 
 
