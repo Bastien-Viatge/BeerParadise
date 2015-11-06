@@ -12,13 +12,11 @@
 <header id="header">
 	
 	<h1 id="header_title"> Welcome to Beer Paradise </h1>
-	<div id="login_part" >
-		<form action="services/login_service.php" method="post">
-			<p id="login_name_div">User name : <input type="text" name="login"></p>
-			<p id="login_pass_div">Password : <input type="password" name="pwd"></p>
-			<input id="login_button" type="submit" value="Log in"/><br/>
-			<p id="signIn_link" style="font-size:10pt;">You don't have an account ? <a href="./Inscription.html">Sign in !</a></p>
-		</form>
+	<div id="logged_part">
+	    <form action="#" method="post">
+			<p> Welcome Juan !</p>
+			<input id="logout_button" type="submit" value="Log out"/>
+	    </form>
 
 	</div>
 	
@@ -34,7 +32,21 @@
 </header>
 
 <div class="contenu">
-
+	<h2>Welcome to your personal space Juan !</h2>
+	<div id="client_data">
+		<p>Delivery address :</p>
+		Calle 52 n°584, La Plata Provincia de Buenos Aires
+		<div id="contact_data">
+			<p id="id_contact">Contact :</p>
+			juan.rodriguez@mymail.fake
+		</div>
+		<div id="birth_data">
+		<p id="id_birth">Birth date :</p>
+		14/02/1985
+		</div>
+		<input id="shop_but" type="button" value="Previous shopping" onclick="alert('It seems that so far, you havn\'t bought anything yet !');"/>
+	</div>
+	<hr size="3" color="black"/>
 </div>
 
 <footer>
