@@ -10,12 +10,8 @@ header
 	background-repeat: repeat, repeat, no-repeat, no-repeat;
 	background-size: auto, auto, auto, cover;
 	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 25px;
 } 
-
-#header{
-
-}
 
 .sel
 {
