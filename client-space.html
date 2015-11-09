@@ -49,40 +49,49 @@
 	<hr size="1" color="black"/>
 	<div id="client_cart">
 		<h2>My shopping cart :</h2>
-		<table id="cart_table">
-			<tr>
-				<th>Beer type</th>
-				<th>Product</th>
-				<th>Price (u)</th>
-				<th>Quantity</th>
-			</tr>
-			<tr>
-				<td>Leffe</td>
-				<td>Pack (x6)</td>
-				<td>9.80€</td>
-				<td>2</td>
-			</tr>
-			<tr>
-				<td>Leffe</td>
-				<td>1L bottle</td>
-				<td>5.50€</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>Bière du démon</td>
-				<td>1L bottle</td>
-				<td>5.70€</td>
-				<td>4</td>
-			</tr>
-			<tr>
-				<td>Goudale</td>
-				<td>0.5L bottle</td>
-				<td>2.80€</td>
-				<td>6</td>
-			</tr>
-		</table>
-
-		<input id="cart_but" type="button" value="Empty my cart" />
+		<div id="cart_part">
+			<table id="cart_table">
+				<tr>
+					<th>Beer type</th>
+					<th>Product</th>
+					<th>Price (u)</th>
+					<th>Quantity</th>
+				</tr>
+				<tr>
+					<td>Leffe</td>
+					<td>Pack (x6)</td>
+					<td>9.80€</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>Leffe</td>
+					<td>1L bottle</td>
+					<td>5.50€</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>Bière du démon</td>
+					<td>1L bottle</td>
+					<td>5.70€</td>
+					<td>4</td>
+				</tr>
+				<tr style="background-color:#00aaff;">
+					<td>Goudale</td>
+					<td>0.5L bottle</td>
+					<td>2.80€</td>
+					<td>6</td>
+				</tr>
+			</table>
+			<input id="cart_but" type="button" value="Empty my cart" />
+			<span style="float:right;">Total price : 82,20€</span>
+		</div>
+		<div id="pay_part">
+			<span>Quantity :</span><br/><br/>
+			<button>-</button>6<button>+</button>
+			<p>Price for this beer :<br/>
+			2.80x6 = 16.8€</p>
+			<button style="float:right;font-size: 1.2em;">Pay !</button>
+		</div>
 	</div>
 </div>
 

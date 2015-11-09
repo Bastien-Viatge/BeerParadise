@@ -218,7 +218,7 @@ a.nounderline:link
 #contact_data,#birth_data,#shop_but{
 	position: absolute;
 	width: 300px;
-
+}
 
 #contact_data,#birth_data,#shop_but{
 	position: absolute;
@@ -243,12 +243,31 @@ a.nounderline:link
 #cart_but{
 	font-size: 1.2em;
 	width: 140px;
-	margin-top:5px;
+}
+
+#client_cart{
+	position: relative;
+	height: 240px;
+}
+
+#cart_part{
+	position: absolute;
+	left: 0;
+	width: 74%;
+
+}
+
+#pay_part{
+	position: absolute;
+	right: 0;
+	width: 25%;
+	margin-left: 5px;
 }
 
 #cart_table{
 	border-collapse: collapse;
-	width: 75%;
+	width: 100%;
+	margin-bottom: 5px;
 }
 
 #cart_table td,th{
