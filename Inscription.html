@@ -3,19 +3,20 @@
 <head>
     <title> Beer paradise </title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link href="css/Style.css" rel="stylesheet" type="text/css" />    <!-- lors du placement des fichiers dans les dossiers, nous avons du indiquer le chemin du fichier CSS -->
+    <link href="css/Style.css" rel="stylesheet" type="text/css" />
     <link href="css/header.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="css/login.css">
 
- <script language="javascript" src="js/verif.js" type="text/javascript"></script>
 
-
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery-ui.js"></script>
 <link rel="stylesheet" href="/resources/demos/style.css">
 
-<script>
+
+
+<!-- Utilizamos este funcion para poder elegir una fecha de nacimiento inferior -->
+<script type="text/javascript">
 
     $(function() {
       $( "#datepicker" ).datepicker({
@@ -34,6 +35,50 @@
 
 </script>
 
+<!-- Verificamos los datos del formulario con el script siguiente-->
+<script type="text/javascript">
+ 
+    function verif()
+    {
+        
+        if (myForm.Name.value == "")
+        {
+            alert ('Please enter your name');
+            myForm.Name.focus();
+            return false;
+        }
+        if(myForm.Surname.value == "")
+        {
+            alert ('Please enter your Surname');
+            myForm.Surname.focus();
+            return false;
+        }
+        
+        if(myForm.Password.value == "")
+        {
+            alert ('Please choose a password');
+            myForm.Password.focus();
+            return false;
+        }
+        if(myForm.Validation.value != myForm.Password.value)
+        {
+            alert ('The validation is not correct, try again');
+            myForm.Validation.focus();
+            return false;
+        }
+        
+        if(myForm.Mail.value == "")
+        {
+            alert ('Please enter your Mail');
+            myForm.Mail.focus();
+            return false;
+        }
+        
+        else {return true;}
+    }
+    
+    
+</script>
 
  </head>
 
@@ -65,12 +110,12 @@
 
 
 <FORM  id="myForm" nom="myForm" method="POST" action="ins.html">
-<!-- création du formulaire par la méthode POST -->
+<!-- creemos un formulario con el método POST -->
     
     <h2> Please enter your datas : </h2>
 <br/>
 
-<!-- On choisie le pattern souhaité pour chaque champs à remplir -->
+
 <p> The (*) fields are needed  </p>
 
 <p>
@@ -79,7 +124,7 @@
     <label for="password"> Password *: </label> <input type="password" name="Password"/> <br/>
     <label for="validation"> Validation *: </label> <input type="password" name="Validation"/> <br/>
 
-    <label for="birth-date"> Birth date *: </label> <input type="text" id="datepicker" name="datepicker"/> <br/>
+    <label for="birth-date"> Birth date *: </label> <input type="text" id="datepicker"/> <br/>
 
     <label for="country"> Country *: </label> <input type="text" name="Country"/> <br/>
     <label for="city"> City *: </label> <input type="text" name="City"/> <br/>
